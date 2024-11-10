@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Registration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Register Your Team</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="registration">
+      <h2>Team Registration Form</h2>
+      <form action="submit_registration.php" method="post">
+        
+        <!-- Team Name -->
+        <label for="team-name">Team Name:</label>
+        <input type="text" id="team-name" name="team_name" required>
+        
+        <!-- Team Captain -->
+        <label for="captain-name">Team Captain:</label>
+        <input type="text" id="captain-name" name="captain_name" required>
+        
+        <!-- Phone Number -->
+        <label for="contact-number">Phone Number:</label>
+        <input type="tel" id="contact-number" name="contact_number" pattern="[0-9]{10}" required>
+        
+        <!-- In-Game Leader (IGL) -->
+        <label for="igl-name">In-Game Leader (IGL):</label>
+        <input type="text" id="igl-name" name="igl_name" required>
+        
+        <!-- Player Names -->
+        <label>Player Names:</label>
+        <input type="text" name="player1" placeholder="Player 1" required>
+        <input type="text" name="player2" placeholder="Player 2" required>
+        <input type="text" name="player3" placeholder="Player 3" required>
+        <input type="text" name="player4" placeholder="Player 4" required>
+        
+        <!-- Optional 5th Player -->
+        <input type="text" name="player5" placeholder="Player 5 (Optional)">
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Registration</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 PUBG Tournament Registration</p>
+  </footer>
+</body>
+</html>
+You sent
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 1em;
+  text-decoration: none;
+}
+
+main {
+  max-width: 600px;
+  margin: 2em auto;
+  padding: 2em;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #333;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 0.5em 0 0.2em;
+}
+
+input[type="text"], input[type="tel"] {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #333;
+  color: #fff;
+  margin-top: 2em;
+}
